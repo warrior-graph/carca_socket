@@ -3,10 +3,10 @@ from carca_socket import CarcaSocket
 
 
 def main():
-    address = ('localhost', 7000)
+    server_address = ('localhost', 6000)
     socket = CarcaSocket()
     client = CarcaClient(socket)
-    client.request_data()
+    client.request_data(server_address)
     print('Passei')
     client.receive_data()
 
