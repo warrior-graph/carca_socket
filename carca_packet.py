@@ -1,6 +1,5 @@
-
 class CarcaPacket():
-    def __init__(self, ack_number=0, seq_number=0, mss=0, ACK=0, FIN=0, SYN=0, payload=b'', *args, **kwargs):
+    def __init__(self, ack_number=0, seq_number=0, mss=2, ACK=0, FIN=0, SYN=0, payload=b'', *args, **kwargs):
         self._ack_number = ack_number
         self._seq_number = seq_number
         self._mss = mss
